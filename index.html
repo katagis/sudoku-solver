@@ -1,0 +1,44 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>AutoSudoku Solver</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div id="content">
+            <h1>AutoSudoku Solver</h1>
+
+            <div id="sudoku">
+                <table id="su-outer-table" class="su-outer"><tbody id="su-outer-tbody"><tr id="su-outer-row-1" class="su-outer"><td id="su-outer-cell-1" class="su-outer"><table id="su-inner-table-1" class="su-inner"><tbody id="su-inner-tbody-1" class="su-inner"><tr id="su-inner-row-1" class="su-inner"><td id="su-inner-cell-1" class="su-inner">8</td><td id="su-inner-cell-2" class="su-inner"></td><td id="su-inner-cell-3" class="su-inner"></td></tr><tr id="su-inner-row-2" class="su-inner"><td id="su-inner-cell-4" class="su-inner"></td><td id="su-inner-cell-5" class="su-inner"></td><td id="su-inner-cell-6" class="su-inner">3</td></tr><tr id="su-inner-row-3" class="su-inner"><td id="su-inner-cell-7" class="su-inner"></td><td id="su-inner-cell-8" class="su-inner">7</td><td id="su-inner-cell-9" class="su-inner"></td></tr></tbody></table></td><td id="su-outer-cell-2" class="su-outer"><table id="su-inner-table-2" class="su-inner"><tbody id="su-inner-tbody-2" class="su-inner"><tr id="su-inner-row-4" class="su-inner"><td id="su-inner-cell-10" class="su-inner"></td><td id="su-inner-cell-11" class="su-inner"></td><td id="su-inner-cell-12" class="su-inner"></td></tr><tr id="su-inner-row-5" class="su-inner"><td id="su-inner-cell-13" class="su-inner">6</td><td id="su-inner-cell-14" class="su-inner"></td><td id="su-inner-cell-15" class="su-inner"></td></tr><tr id="su-inner-row-6" class="su-inner"><td id="su-inner-cell-16" class="su-inner"></td><td id="su-inner-cell-17" class="su-inner">9</td><td id="su-inner-cell-18" class="su-inner"></td></tr></tbody></table></td><td id="su-outer-cell-3" class="su-outer"><table id="su-inner-table-3" class="su-inner"><tbody id="su-inner-tbody-3" class="su-inner"><tr id="su-inner-row-7" class="su-inner"><td id="su-inner-cell-19" class="su-inner"></td><td id="su-inner-cell-20" class="su-inner"></td><td id="su-inner-cell-21" class="su-inner"></td></tr><tr id="su-inner-row-8" class="su-inner"><td id="su-inner-cell-22" class="su-inner"></td><td id="su-inner-cell-23" class="su-inner"></td><td id="su-inner-cell-24" class="su-inner"></td></tr><tr id="su-inner-row-9" class="su-inner"><td id="su-inner-cell-25" class="su-inner">2</td><td id="su-inner-cell-26" class="su-inner"></td><td id="su-inner-cell-27" class="su-inner"></td></tr></tbody></table></td></tr><tr id="su-outer-row-2" class="su-outer"><td id="su-outer-cell-4" class="su-outer"><table id="su-inner-table-4" class="su-inner"><tbody id="su-inner-tbody-4" class="su-inner"><tr id="su-inner-row-10" class="su-inner"><td id="su-inner-cell-28" class="su-inner"></td><td id="su-inner-cell-29" class="su-inner">5</td><td id="su-inner-cell-30" class="su-inner"></td></tr><tr id="su-inner-row-11" class="su-inner"><td id="su-inner-cell-31" class="su-inner"></td><td id="su-inner-cell-32" class="su-inner"></td><td id="su-inner-cell-33" class="su-inner"></td></tr><tr id="su-inner-row-12" class="su-inner"><td id="su-inner-cell-34" class="su-inner"></td><td id="su-inner-cell-35" class="su-inner"></td><td id="su-inner-cell-36" class="su-inner"></td></tr></tbody></table></td><td id="su-outer-cell-5" class="su-outer"><table id="su-inner-table-5" class="su-inner"><tbody id="su-inner-tbody-5" class="su-inner"><tr id="su-inner-row-13" class="su-inner"><td id="su-inner-cell-37" class="su-inner"></td><td id="su-inner-cell-38" class="su-inner"></td><td id="su-inner-cell-39" class="su-inner">7</td></tr><tr id="su-inner-row-14" class="su-inner"><td id="su-inner-cell-40" class="su-inner"></td><td id="su-inner-cell-41" class="su-inner">4</td><td id="su-inner-cell-42" class="su-inner">5</td></tr><tr id="su-inner-row-15" class="su-inner"><td id="su-inner-cell-43" class="su-inner">1</td><td id="su-inner-cell-44" class="su-inner"></td><td id="su-inner-cell-45" class="su-inner"></td></tr></tbody></table></td><td id="su-outer-cell-6" class="su-outer"><table id="su-inner-table-6" class="su-inner"><tbody id="su-inner-tbody-6" class="su-inner"><tr id="su-inner-row-16" class="su-inner"><td id="su-inner-cell-46" class="su-inner"></td><td id="su-inner-cell-47" class="su-inner"></td><td id="su-inner-cell-48" class="su-inner"></td></tr><tr id="su-inner-row-17" class="su-inner"><td id="su-inner-cell-49" class="su-inner">7</td><td id="su-inner-cell-50" class="su-inner"></td><td id="su-inner-cell-51" class="su-inner"></td></tr><tr id="su-inner-row-18" class="su-inner"><td id="su-inner-cell-52" class="su-inner"></td><td id="su-inner-cell-53" class="su-inner">3</td><td id="su-inner-cell-54" class="su-inner"></td></tr></tbody></table></td></tr><tr id="su-outer-row-3" class="su-outer"><td id="su-outer-cell-7" class="su-outer"><table id="su-inner-table-7" class="su-inner"><tbody id="su-inner-tbody-7" class="su-inner"><tr id="su-inner-row-19" class="su-inner"><td id="su-inner-cell-55" class="su-inner"></td><td id="su-inner-cell-56" class="su-inner"></td><td id="su-inner-cell-57" class="su-inner">1</td></tr><tr id="su-inner-row-20" class="su-inner"><td id="su-inner-cell-58" class="su-inner"></td><td id="su-inner-cell-59" class="su-inner"></td><td id="su-inner-cell-60" class="su-inner">8</td></tr><tr id="su-inner-row-21" class="su-inner"><td id="su-inner-cell-61" class="su-inner"></td><td id="su-inner-cell-62" class="su-inner">9</td><td id="su-inner-cell-63" class="su-inner"></td></tr></tbody></table></td><td id="su-outer-cell-8" class="su-outer"><table id="su-inner-table-8" class="su-inner"><tbody id="su-inner-tbody-8" class="su-inner"><tr id="su-inner-row-22" class="su-inner"><td id="su-inner-cell-64" class="su-inner"></td><td id="su-inner-cell-65" class="su-inner"></td><td id="su-inner-cell-66" class="su-inner"></td></tr><tr id="su-inner-row-23" class="su-inner"><td id="su-inner-cell-67" class="su-inner">5</td><td id="su-inner-cell-68" class="su-inner"></td><td id="su-inner-cell-69" class="su-inner"></td></tr><tr id="su-inner-row-24" class="su-inner"><td id="su-inner-cell-70" class="su-inner"></td><td id="su-inner-cell-71" class="su-inner"></td><td id="su-inner-cell-72" class="su-inner"></td></tr></tbody></table></td><td id="su-outer-cell-9" class="su-outer"><table id="su-inner-table-9" class="su-inner"><tbody id="su-inner-tbody-9" class="su-inner"><tr id="su-inner-row-25" class="su-inner"><td id="su-inner-cell-73" class="su-inner"></td><td id="su-inner-cell-74" class="su-inner">6</td><td id="su-inner-cell-75" class="su-inner">8</td></tr><tr id="su-inner-row-26" class="su-inner"><td id="su-inner-cell-76" class="su-inner"></td><td id="su-inner-cell-77" class="su-inner">1</td><td id="su-inner-cell-78" class="su-inner"></td></tr><tr id="su-inner-row-27" class="su-inner"><td id="su-inner-cell-79" class="su-inner">4</td><td id="su-inner-cell-80" class="su-inner"></td><td id="su-inner-cell-81" class="su-inner"></td></tr></tbody></table></td></tr></tbody></table>
+            </div>
+            <div id="tools">
+                <button type="button" id="brute-force">Brute Force!</button>
+                <button type="button" id="extended-brute">Extended Brute</button>
+                <button type="button" id="clean-table">Clean Table</button><br />
+                <button type="button" id="perm-check">PERMUTATIVE CHECK</button><br />
+                <p id="log"></p>
+                <h3>Copy Table:</h3>
+                <textarea id="export-table"></textarea><br />
+                <button type="button" id="export-button">Export Table</button>
+                <h3>Paste Table:</h3>
+                <textarea id="import-table"></textarea><br />
+                <button type="button" id="import-button">Import Table</button>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+        <script src="js/main.js"></script>
+
+
+    </body>
+</html>
